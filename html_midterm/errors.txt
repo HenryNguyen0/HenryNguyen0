@@ -1,0 +1,25 @@
+Error 1: Missing Doctype before Line 1
+Error 2: Missing language="en" Line 2
+Error 3: Information in the wrong place Line 4
+Error 4: Missing closing header tag Line 9
+Error 5: Missing opening paragraph tag Line 15
+Error 6: Shouldn't be / in front of opening li Line 23
+Error 7: Unordered list tag instead of opening list tag Line 28
+Error 8: Missing closing p tag Line 30
+Error 9: 
+Error 10: Missing closing a tag Line 33
+Error 11: Img Source instead of Src Line 49 
+Error 12: Image is in JPEG format instead of JPG Line 49
+Error 13: Missing p tag Line 51
+Error 14: Missing strikethrough tag Line 51
+Error 15: Missing closing comment tag Line 57
+Error 16: Should be using body style tag Line 53
+Error 17: Missing correct syntax for background color Line 53
+Error 18: Wrong closing header number Line 67
+Error 19: Missing closing </a> Line 59
+Error 20: Missing closing </table> Line 47
+Error 21: Missing semicolon Line 53
+Error 22:
+Error 23:
+Error 24:
+Error 25:
