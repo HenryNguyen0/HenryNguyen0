@@ -23,3 +23,20 @@ Error 22:
 Error 23:
 Error 24:
 Error 25:
+-------------------
+
+Error 26: Missing html lang Line 2
+Error 27: Missing meta char set Line 4
+Error 28: Missing meta name Line 5
+Error 29: Missing > after opening body Line 8
+Error 30: Has extra html tag Line 9
+Error 31: Missing closing strong tag Line 12
+Error 32: Missing closing p tag Line 12
+Error 33: Missing closing div Line 13
+Error 34:
+Error 35:
+Error 36:
+Error 37:
+Error 38:
+Error 39:
+Error 40:
