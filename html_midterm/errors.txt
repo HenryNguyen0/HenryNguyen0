@@ -11,7 +11,7 @@ Error 8: Image is png instead of jpg Line 30
 Error 9: Missing alt text Line 30
 Error 10: Missing closing a tag Line 32
 Error 11: Has extra closing image tag Line 32
-Error 12 Missing closing td tag Line 41
+Error 12: Missing closing td tag Line 41
 Error 13: Missing closing table tag Line 47
 Error 14: Image was jpeg instead of jpg Line 49
 Error 15: Said img source instead of src Line 49
