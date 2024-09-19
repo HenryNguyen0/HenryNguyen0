@@ -33,10 +33,10 @@ Error 30: Has extra html tag Line 9
 Error 31: Missing closing strong tag Line 12
 Error 32: Missing closing p tag Line 12
 Error 33: Missing closing div Line 13
-Error 34:
-Error 35:
-Error 36:
-Error 37:
-Error 38:
-Error 39:
-Error 40:
+Error 34: H1 was in title instead of body Line 10
+Error 35: Missing closing strong and p tag Line 14
+Error 36: Missing closing div Line 15
+Error 37: Should be img src not img href and image named wrong Line 17
+Error 38: Missing opening p tag Line 21
+Error 39: Wasn't in a comment tag Line 22
+Error 40: Missing l in html Line 23
