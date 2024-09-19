@@ -1,42 +1,44 @@
+Partner: Ethan Epperson
+
 Error 1: Missing Doctype before Line 1
-Error 2: Missing language="en" Line 2
-Error 3: Information in the wrong place Line 4
-Error 4: Missing closing header tag Line 9
-Error 5: Missing opening paragraph tag Line 15
-Error 6: Shouldn't be / in front of opening li Line 23
-Error 7: Unordered list tag instead of opening list tag Line 28
-Error 8: Missing closing p tag Line 30
-Error 9: 
-Error 10: Missing closing a tag Line 33
-Error 11: Img Source instead of Src Line 49 
-Error 12: Image is in JPEG format instead of JPG Line 49
-Error 13: Missing p tag Line 51
-Error 14: Missing strikethrough tag Line 51
-Error 15: Missing closing comment tag Line 57
-Error 16: Should be using body style tag Line 53
-Error 17: Missing correct syntax for background color Line 53
-Error 18: Wrong closing header number Line 67
-Error 19: Missing closing </a> Line 59
-Error 20: Missing closing </table> Line 47
-Error 21: Missing semicolon Line 53
-Error 22:
-Error 23:
-Error 24:
-Error 25:
+Error 2: Extra line in the wrong spot Line 4
+Error 3: Missing closing header tag Line 11
+Error 4: Missing opening parapgraph tag Line 13
+Error 5: Was an extra / before the opening li Line 21
+Error 6: Was an unordered list tag when the opening tag is ordered list Line 26
+Error 7: Missing closing paragraph tag Line 28
+Error 8: Image is png instead of jpg Line 30
+Error 9: Missing alt text Line 30
+Error 10: Missing closing a tag Line 32
+Error 11: Has extra closing image tag Line 32
+Error 12 Missing closing td tag Line 41
+Error 13: Missing closing table tag Line 47
+Error 14: Image was jpeg instead of jpg Line 49
+Error 15: Said img source instead of src Line 49
+Error 16: Missing strikethrough tag Line 51
+Error 17: Missing paragraph tag Line 51
+Error 18: Syntax should be body style not p Line 53
+Error 19: Comment line wasn't in a closing comment tag Line 57
+Error 20: Missing closing a tag Line 59
+Error 21: P closing tag comes before the styling closing tag Line 61
+Error 22: Italicized instead of underlined Line 61
+Error 23: Li tag used instead of Dt Line 65
+Error 24: Li tag used instead of Dd line 66
+Error 25: Had closing h3 tag instead of h2 Line 68
 -------------------
 
 Error 26: Missing html lang Line 2
-Error 27: Missing meta char set Line 4
-Error 28: Missing meta name Line 5
-Error 29: Missing > after opening body Line 8
-Error 30: Has extra html tag Line 9
-Error 31: Missing closing strong tag Line 12
-Error 32: Missing closing p tag Line 12
-Error 33: Missing closing div Line 13
-Error 34: H1 was in title instead of body Line 10
-Error 35: Missing closing strong and p tag Line 14
-Error 36: Missing closing div Line 15
-Error 37: Should be img src not img href and image named wrong Line 17
+Error 27: Missing > after opening body Line 8
+Error 28: Has extra html tag Line 9
+Error 29: H1 was in title instead of body Line 10 
+Error 30: Missing closing p tag Line 12
+Error 31: Missing closing div Line 13
+Error 32: Missing closing p tag Line 14
+Error 33: Missing closing strong Line 14
+Error 34: Missing closing div Line 15
+Error 35: Image named incorrectly Line 17
+Error 36: Should be img src not img href Line 17
+Error 37: Missing header tag Line 19
 Error 38: Missing opening p tag Line 21
 Error 39: Wasn't in a comment tag Line 22
 Error 40: Missing l in html Line 23

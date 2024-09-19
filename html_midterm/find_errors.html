@@ -1,17 +1,16 @@
-<!DOCTYPE html> <!-- 1. Doctype HTML -->
-<!-- <html> 2.  This line should be deleted -->
-<html language="en"> <!-- 3. This line was in the wrong place --> 
+<!DOCTYPE html> <!--  Doctype HTML -->
+<html language="en"> <!-- Missing lang=en --> 
 <head>
-    
+    <!-- <html language="en"> This is in the wrong spot and has wrong syntax-->
     <meta charset="UTF-8"> <!-- Missing meta charset originally-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Missing meta name-->
     
     <title>Error-Filled Page</title>
     
 <body> 
-    <h1>Welcome to My Error-Filled Page</h1> <!-- 4. This was missing the closing header tag-->
+    <h1>Welcome to My Error-Filled Page</h1> <!-- This was missing the closing header tag-->
     
-    <p>This is a paragraph.</p> <!-- 5. This was missing an opening paragraph tag-->
+    <p>This is a paragraph.</p> <!-- This was missing an opening paragraph tag-->
     
     <ol>
         <li>Item 1</li>
@@ -19,18 +18,18 @@
         <li>Item 3</li>
         <li>Item 4</li>
         <li>Item 5</li>
-        <li>Item 6</li> <!-- 6.  There should no / before the opening li--> 
+        <li>Item 6</li> <!--  There should no / before the opening li--> 
         <li>Item 7</li>
         <li>Item 8</li>
         <li>Item 9</li>
         <li>Item 10</li>
-    </ol> <!-- 7. This was a unordered list tag when the opening tag was ordered-->
+    </ol> <!-- This was a unordered list tag when the opening tag was ordered-->
 
-    <p>This is another paragraph.</p> <!-- 8. Missing closing p tag-->
+    <p>This is another paragraph.</p> <!-- Missing closing p tag-->
     
-    <img src="/html_midterm/image.jpg"> <!-- 9. Image needs to be properly sourced...ASK ABOUT THIS ONE-->
+    <img src="/html_midterm/image.jpg" alt="image"> <!-- Image was a png-->
 
-    <a href="/html_midterm/find_errors_2.html" target="_blank">Click me!</a></img> <!-- 10. Missing closing a tag-->
+    <a href="/html_midterm/find_errors_2.html" target="_blank">Click me!</a> <!-- Missing closing a tag, had an extra image tag-->
 
     <table>
         <tr>
@@ -39,7 +38,7 @@
         </tr>
         <tr>
             <td>John</td>
-            <td>25<td>
+            <td>25</td> <!-- Missing closing td tag -->
         </tr>
         <tr>
             <td>Jane</td>
@@ -47,11 +46,11 @@
         </tr>
     </table> <!-- Missing closing table -->
     
-    <img src="/html_midterm/error.jpg" alt="Error Image"> <!-- 11. Image tag is jpeg when it is a jpg 12. Source instead of src -->
+    <img src="/html_midterm/error.jpg" alt="Error Image"> <!-- Image tag is jpeg when it is a jpg 12. Source instead of src -->
 
     <p><s>This is a paragraph with strikethrough text.</s></p> <!-- Was missing paragraph and strikethrough-->
 
-    <body style="background-color: lightgray;">Text</body> <!-- Should be body style no p, Missing correct syntax, Missing ;-->
+    <p style="background-color: lightgray;">Text</p> <!-- Should be body style no p, Missing correct syntax, Missing ;-->
 
     <input type="button" value="Click me">
 
@@ -59,13 +58,13 @@
 
     <a href="#">Link</a> <!-- Missing closing a tag -->
 
-    <p><em>Underlined text</p></em>
+    <p><u>Underlined text</u></p> <!-- Not underlined, and p tag comes before styling closing tag-->
 
     <dl>
-        <li>Descriptive Item Title</li>
-        <li>Descriptive Item Text</li>
+        <dt>Descriptive Item Title</dt> <!-- li tag is used instead of dt-->
+        <dd>Descriptive Item Text</dd> <!-- li tag used instead of dd-->
     </dl>
-    <h2 style="color:Tomato;">Hello World</h2>
+    <h2 style="color:Tomato;">Hello World</h2> <!-- Had closing h3 instead of h2 -->
 </body>
 </html>
 <!-- 25 errors on this page-->
