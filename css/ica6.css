@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    /* background: #ccc; */
+    background-image: linear-gradient(to bottom, rgba(70, 70, 70, 0.4), rgba(255,255,255,1), rgba(70, 70, 70, 0.4));
+  }
+  
+  article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 30mm;
+    right: 256mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-image: url(../img/logo.png);
+    filter: drop-shadow(5px 1px 1px black);
+  }
+  
+  /* Your CSS below here */
+
+#top_image{
+    position: absolute;
+    width: 100%;
+    display: block;
+
+}
+
+#bottom_image{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+body{
+    border-top: solid red 1mm;
+    border-bottom: solid red 1mm;
+
+}
+
+body address{
+    line-height: 1.3em;
+    font-weight: bold;
+    height: 5mm;
+    right: 1mm;
+}

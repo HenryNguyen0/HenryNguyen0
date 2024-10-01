@@ -1,0 +1,34 @@
+p{
+    color: red !important;
+}
+
+p.purple{
+    color: purple;
+}
+
+p #blue{
+    color:blue;
+}
+
+div{
+    border-style: dotted;
+    border-color: red;
+    /* padding: 30px; */
+    margin: 100px;
+    margin-left: 200px;
+}
+
+#first_div{
+    position: fixed;
+    left: 200px;
+}
+
+img{
+    position: absolute;
+    width: 100px;
+    bottom: 10px;
+}
+
+#second_div{
+    height: 200px;
+}
