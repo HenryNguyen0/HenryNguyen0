@@ -27,7 +27,7 @@ body{
     top: 150mm;
 }
 
-article p{
+address p{
     z-index: 2;
     font-size: 30mm;
     left: 90mm;
