@@ -24,10 +24,11 @@ body{
     height: 300px;
     z-index: 1;
     position: absolute;
-    top: 150mm;
+    top: 2mm;
+    right: 80mm;
 }
 
-address p{
+#score{
     z-index: 2;
     font-size: 30mm;
     left: 90mm;
@@ -35,7 +36,7 @@ address p{
     position: absolute;
 }
 
-section p{
+#broncoswin{
     font-size: 15mm;
     position: absolute;
     top: 140mm;
