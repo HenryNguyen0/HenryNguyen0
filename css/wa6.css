@@ -1,0 +1,52 @@
+html{
+    font-family: arial;
+    color: navy;
+}
+
+body{
+    background-image: url(../img/broncos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100;
+}
+
+
+
+#ncaalogo {
+    width: 290px;
+    height: 150px;
+    z-index: 1;
+    position: absolute;
+    top: -5mm;
+}
+
+#broncoslogo{
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    top: 150mm;
+}
+
+article p{
+    z-index: 2;
+    font-size: 30mm;
+    left: 90mm;
+    bottom: 0mm;
+    position: absolute;
+}
+
+section p{
+    font-size: 15mm;
+    position: absolute;
+    top: 140mm;
+    left: 75mm;
+}
+
+#buccaneerslogo{
+    z-index: 1;
+    width: 240px;
+    height: 190px;
+    position: absolute;
+    bottom: 30mm;
+    left: 175mm;
+}
