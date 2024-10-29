@@ -1,0 +1,37 @@
+@media screen and (min-width: 480px){
+    body{
+        background-color: limegreen;
+    }
+    ul{
+        flex-direction: column;
+    }
+    
+}
+
+body{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    background-color: black;
+    margin: 0;
+    padding: 10px 0px;
+    justify-content: right;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+}
+
+li a:hover{
+    background-color: darkslategrey;
+}
+
+li a:active{
+    background-color: white;
+    color: black;
+}
