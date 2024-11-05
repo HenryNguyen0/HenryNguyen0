@@ -9,7 +9,7 @@ function randomValueFromArray(array){
 
 const storyText = "It was 32 Fahrenheit outside, so :insertx: stayed inside because it was freezing. They got to the couch and turned on :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
 
-const insertX = ["Willy Wonka", "Big Daddy", "Lorax"];
+const insertX = ["Willy Wonka", "Big Daddy", "The Lorax"];
 
 const insertY = ["The Dark Knight Rises", "She's the Man", "Wayne's World"];
 
@@ -52,7 +52,7 @@ function result() {
     }
   
     if (insertX == "Willy Wonka"){
-      
+
     }
 
     // Display the final story
