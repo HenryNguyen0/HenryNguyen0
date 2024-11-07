@@ -6,7 +6,7 @@ const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
 
-const images = ['../img/chris.jpg', 'chick.png', 'DSC_0172.jpg', 'IMG_4912.jpg', 'IMG_1161.jpg'];
+const images = ['../img/chris.jpg', '../img/chick.png', '../img/DSC_0172.jpg', '../img/IMG_4912.jpg', '../img/IMG_1161.JPG'];
 const alts = {
   'chris.jpg' : 'chris selfie',
   'chick.png' : 'Rock that looks like a wave',
