@@ -6,13 +6,13 @@ const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
 
-const images = ['../img/pic1.jpg', '../img/pic2.jpg', '../img/pic3.jpg', '../img/pic4.jpg', '../img/pic5.jpg'];
+const images = ['chris.jpg', 'chick.png', 'DSC_0172.jpg', 'IMG_4912.jpg', 'IMG_1161.jpg'];
 const alts = {
-  '../img/pic1.jpg' : 'Closeup of a human eye',
-  '../img/pic2.jpg' : 'Rock that looks like a wave',
-  '../img/pic3.jpg' : 'Purple and white pansies',
-  '../img/pic4.jpg' : 'Section of wall from a pharoah\'s tomb',
-  '../img/pic5.jpg' : 'Large moth on a leaf'
+  'chris.jpg' : 'Closeup of a human eye',
+  'chick.png' : 'Rock that looks like a wave',
+  'DSC_0172.jpg' : 'Purple and white pansies',
+  'IMG_4912.jpg' : 'Section of wall from a pharoah\'s tomb',
+  'IMG_1161.jpg' : 'Large moth on a leaf'
 };
 
 /* Looping through images */
@@ -30,7 +30,7 @@ const alts = {
 
 for (const image of images) {
     const newImage = document.createElement('img');
-    newImage.setAttribute('src', `img/${image}`);
+    newImage.setAttribute('src', `/img/${image}`);
     newImage.setAttribute('alt', alts[image]);
     thumbBar.appendChild(newImage);
   

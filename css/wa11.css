@@ -41,3 +41,14 @@ button {
   float: left;
   cursor: pointer;
 }
+
+
+#chick.png{
+  height: 480px;
+}
+
+.full-img img{
+  height: 480px;
+  width: 680px;
+  object-fit: contain;
+}
