@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA 11</title>
+
+    <style>
+        input[type="text"] {
+        padding: 5px;
+        width: 200px;
+      }
+
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <label for="name">Name: </label>
+        <input id="name" type="text" placeholder="" />
+    </div>
+    <br>
+    <div>
+        <label for="puppyAge">Puppy Age: </label>
+        <input type="number" type="number" placeholder="">
+    </div>
+    <br>
+    <div>
+
+    </div>
+
+
+    <h2>Alphabetical Order</h2>
+  <div id="alphabetizedStrings"></div>
+
+  <h2>Capitalize Words</h2>
+  <div id="capitalizeWordsOutput"></div>
+
+</body>
+<script src="../js/ica11.js"></script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>In-Class Activity #11</title>
+</head>
+<body>
+  <h1>In-Class Activity #11</h1>
+
+  <h2>Fortune Teller</h2>
+  <div id="fortunes">
+    <label for="numChildren">Number of children:</label>
+  <input type="number" id="numChildren" placeholder="Enter number of children"><br>
+
+  <label for="partnerName">Partner's name:</label>
+  <input type="text" id="partnerName" placeholder="Enter partner's name"><br>
+
+  <label for="location">Location:</label>
+  <input type="text" id="location" placeholder="Enter location"><br>
+
+  <label for="jobTitle">Occupation:</label>
+  <input type="text" id="jobTitle" placeholder="Occupation"><br>
+
+  <!-- Button to display the fortune -->
+  <button onclick="tellFortune(document.getElementById('partnerName').value)">Tell My Fortune</button>
+  </div>
+
+
+  <h2>Dog Age Calculator</h2>
+  <div id="dog-ages">
+  <label for="dogAgeInput">Enter your dog's age: </label>
+  <input type="number" id="dogAgeInput">
+  <button onclick="calculateDogAge(document.getElementById('dogAgeInput').value)">Calculate</button>
+  </div>
+
+  <h2>Reverse Number</h2>
+  <div id="reverseNumber">
+    <label for="reverseNumbers">Reverse: </label>
+    <input type="number" id="reverseNumbers" placeholder="">
+    <button onclick="reverseNumber(document.getElementById('reverseNumbers').value)">Reverse</button>
+  </div>
+
+  <h2>Alphabetical Order</h2>
+  <div id="alphabetizedStrings">
+    <label for="alphabetizeString">Reverse: </label>
+    <input type="text" id="alphabetizeString" placeholder="">
+    <button onclick="alphabetizeString(document.getElementById('alphabetizeString').value)">Sort</button>
+  </div>
+
+  <h2>Capitalize</h2>
+  <div id="capitalizedStrings">
+    <label for="capitalizeWords">Capitalize: </label>
+    <input type="text" id="capitalizeWords" placeholder="">
+    <button onclick="capitalizeWords(document.getElementById('capitalizeWords').value)">Sort</button>
+  </div>
+
+  <script src="../ica/ica11.html"></script>
+</body>
+</html>
