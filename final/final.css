@@ -8,6 +8,20 @@ body {
     height: 100vh;
     margin: 0;
   }
+
+body h2{
+  font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #41362d;
+}
+
+body p{
+  font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #41362d;
+}
   
   #game-container {
     text-align: center;
@@ -24,16 +38,19 @@ body {
 
   #grid {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
-    gap: 10px;
-    margin: 20px auto;
+    gap: 1vw; /* Gap scales with screen width */
+    width: 70vw; /* Grid width scales with screen width */
+    height: 70vw; /* Keep the grid square */
+    max-width: 700px; /* Maximum size for larger screens */
+    max-height: 700px; /* Maximum size for larger screens */
+    margin: 8px auto; /* Center the grid */
   }
+  
   
   .cell {
     background: #cdc1b4;
     font-size: 24px;
-    color: #776e65;
+    color: #000000;
     text-align: center;
     line-height: 100px;
     font-weight: bold;
@@ -45,7 +62,7 @@ body {
   }
   
   #restart {
-    background: #8f7a66;
+    background: #4b423b;
     color: white;
     border: none;
     padding: 10px 20px;
