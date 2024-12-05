@@ -1,23 +1,25 @@
-let score = 0; // Initialize score
-let gridSize = 4; // Start with a 4x4 grid
-let grid = []; // The main grid array
+let score = 0; // score initializing
+let gridSize = 4; // begin with 4x4
+let grid = []; // the main grid
 
 const gridContainer = document.getElementById('grid');
 const restartButton = document.getElementById('restart');
 const statusText = document.getElementById('status');
 
-// Update the score display
+// displaying the score
 function updateScore(points) {
+
+  // increase the current score by the points earned
   score += points;
   document.getElementById('score').textContent = score;
 
-  // Check if the user wins
+  // check if the player has won
   if (score >= 2000) {
-    endGame('win');
+    end('win');
     return;
   }
 
-  // Expand grid at specific thresholds
+  // expand the grid when the score requirements are met
   if (score >= 500 && gridSize === 4) {
     gridSize = 5;
     expandGrid();
@@ -27,72 +29,72 @@ function updateScore(points) {
   }
 }
 
-// End the game with a specific status
-function endGame(status) {
+// end the game and stop all further input
+function end(status) {
   if (status === 'win') {
     statusText.textContent = 'Congratulations! You Win!';
   } else if (status === 'lose') {
     statusText.textContent = 'Game Over!';
   }
 
-  document.removeEventListener('keydown', handleKeyPress); // Disable further moves
+  document.removeEventListener('keydown', handleKeyPress); // stops inputs
 }
 
-// Check game status (loss condition)
-function checkGameStatus() {
-  // Check if there are empty tiles
+// checks if the game no longer has valid moves
+function validMove() {
+  // check for empty grid spaces
   if (grid.some(row => row.includes(0))) {
-    return; // There are valid moves
+    return; // if there are valid moves return
   }
 
-  // Check if adjacent tiles can be merged
+  // check for possible merging
   for (let r = 0; r < gridSize; r++) {
-    for (let c = 0; c < gridSize; c++) {
-      const currentTile = grid[r][c];
+    for (let d = 0; d < gridSize; d++) {
+      const currentTile = grid[r][d];
 
-      // Check right and down neighbors (avoid checking out of bounds)
+      // checks the grid to the right and below
       if (
-        (c < gridSize - 1 && currentTile === grid[r][c + 1]) || // Right neighbor
-        (r < gridSize - 1 && currentTile === grid[r + 1][c])    // Down neighbor
+        (d < gridSize - 1 && currentTile === grid[r][d + 1]) || // right 
+        (r < gridSize - 1 && currentTile === grid[r + 1][d])    // down 
       ) {
-        return; // There are valid moves
+        return; // valid moves
       }
     }
   }
 
-  // No valid moves left
-  endGame('lose');
+  //  no more valid moves
+  end('lose');
 }
 
-// Reset the game
+// reset game
 restartButton.addEventListener('click', () => {
   score = 0;
-  gridSize = 4; // Reset to 4x4 grid
+  gridSize = 4; // reset to 4x4 
   document.getElementById('score').textContent = score;
   createGrid();
   statusText.textContent = '';
   document.addEventListener('keydown', handleKeyPress);
 });
 
-// Initialize the grid
+// create the grid
 function createGrid() {
   grid = Array.from({ length: gridSize }, () => Array(gridSize).fill(0));
   addNewTile();
   addNewTile();
-  renderGrid();
+  generateGrid();
 }
 
-// Expand the grid
+// expand grid
 function expandGrid() {
   const newGrid = Array.from({ length: gridSize }, (_, r) =>
     Array.from({ length: gridSize }, (_, c) => (grid[r] && grid[r][c] ? grid[r][c] : 0))
   );
   grid = newGrid;
-  renderGrid();
+  generateGrid();
 }
 
-// Render the grid
-function renderGrid() {
+// generate grid
+function generateGrid() {
   gridContainer.innerHTML = '';
   gridContainer.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
   gridContainer.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
@@ -108,29 +110,29 @@ function renderGrid() {
   }
 }
 
-// Add a new tile
+// add more tiles
 function addNewTile() {
   const emptyCells = [];
   
-  // Collect all empty cells in the current grid
+  // collect empty cells in the current grid
   for (let r = 0; r < gridSize; r++) {
     for (let c = 0; c < gridSize; c++) {
       if (grid[r][c] === 0) emptyCells.push({ r, c });
     }
   }
   
-  // If there are no empty cells, do nothing
+  // if there are no empty cells, do nothing
   if (emptyCells.length === 0) return;
 
-  // Randomly pick an empty cell and assign it a value (2 or 4)
+  // randomly pick an empty cell and assign it a value (2 or 4)
   const { r, c } = emptyCells[Math.floor(Math.random() * emptyCells.length)];
   grid[r][c] = Math.random() < 0.9 ? 2 : 4;
 }
 
 
-// Move the grid and merge tiles
+// move the grid and merge tiles
 function moveGrid(direction) {
-  const previousGrid = JSON.stringify(grid); // Save the grid state
+  const previousGrid = JSON.stringify(grid); // save the current grid
 
   for (let i = 0; i < gridSize; i++) {
     let line = direction === 'left' || direction === 'right'
@@ -143,7 +145,7 @@ function moveGrid(direction) {
     for (let j = 0; j < compacted.length - 1; j++) {
       if (compacted[j] === compacted[j + 1]) {
         compacted[j] *= 2;
-        updateScore(compacted[j]); // Add merged value to score
+        updateScore(compacted[j]); // add the combined squares to the score
         compacted.splice(j + 1, 1);
         compacted.push(0);
       }
@@ -163,13 +165,13 @@ function moveGrid(direction) {
   const currentGrid = JSON.stringify(grid);
   if (currentGrid !== previousGrid) {
     addNewTile();
-    renderGrid();
-    checkGameStatus();
+    generateGrid();
+    validMove();
   }
 }
 
-// Check game status
-function checkGameStatus() {
+// check game status
+function validMove() {
   if (grid.some(row => row.includes(2048))) {
     statusText.textContent = 'You Win!';
     document.removeEventListener('keydown', handleKeyPress);
@@ -186,7 +188,7 @@ function checkGameStatus() {
   }
 }
 
-// Handle key presses
+// arrow key input
 function handleKeyPress(event) {
   const keyMap = {
     ArrowLeft: 'left',
@@ -201,6 +203,6 @@ function handleKeyPress(event) {
   }
 }
 
-// Start the game
+// start the game
 createGrid();
 document.addEventListener('keydown', handleKeyPress);

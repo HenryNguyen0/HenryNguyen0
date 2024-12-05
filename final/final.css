@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-  }
+}
 
 body h2{
   font-size: 24px;
@@ -23,56 +23,58 @@ body p{
     color: #41362d;
 }
   
-  #game-container {
+#game-container {
     text-align: center;
-  }
+}
   
-  /* Add this to style.css */
-    #score-container {
+/* score sizing */
+#score-container {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #776e65;
-  }
+}
   
 
-  #grid {
-    display: grid;
-    gap: 1vw; /* Gap scales with screen width */
-    width: 70vw; /* Grid width scales with screen width */
-    height: 70vw; /* Keep the grid square */
-    max-width: 700px; /* Maximum size for larger screens */
-    max-height: 700px; /* Maximum size for larger screens */
-    margin: 8px auto; /* Center the grid */
-  }
+#grid {
+  display: grid;
+  /* screen scaling */
+  gap: 1vw;
+  width: 70vw;
+  height: 70vw; 
+  /* keep everything on screen and uniform */
+  max-width: 700px;
+  max-height: 700px; 
+  margin: 8px auto;
+}
   
+/* style for each cell */
+.cell {
+  background: #cdc1b4;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  border-radius: 5px;
+}
   
-  .cell {
-    background: #cdc1b4;
-    font-size: 24px;
-    color: #000000;
-    text-align: center;
-    line-height: 100px;
-    font-weight: bold;
-    border-radius: 5px;
-  }
+.cell.empty {
+  background: #ccc0b3;
+}
   
-  .cell.empty {
-    background: #ccc0b3;
-  }
+#restart {
+  background: #4b423b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
   
-  #restart {
-    background: #4b423b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  
-  #status {
-    margin-top: 20px;
-    font-size: 18px;
-  }
+#status {
+  margin-top: 20px;
+  font-size: 18px;
+}
   
